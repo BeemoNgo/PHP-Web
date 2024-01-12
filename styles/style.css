@@ -1,0 +1,356 @@
+/*
+filename: style.css
+author: H, others
+last modified: 19/9/22
+description: multiple html files
+*/
+body {
+  background: #ededed;
+  /* font-family: "Lucida Handwriting"; */
+  color: BLACK;
+}
+td {
+  text-align: center;
+}
+
+.green {
+  color: green;
+}
+div.a {
+  text-align: center;
+  margin-top: 20px;
+    font-size: 40px;
+}
+div.a a:link {
+	color: #454545;
+}
+div.a a:hover {
+      color: #999999;
+}
+div.a a:visited {
+      color: #202020;
+}
+
+  /* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #1f1f1f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 1.5vw;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 1.5vw;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #666666;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Container holding the image and the text */
+.container {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.sliding-background {
+  background: url("../styles/images/pixelcity.gif") repeat-x;
+  background-size: 960px 540px;
+  height: 540px;
+  width: 5760px; /* The image width times 6 */
+  animation: slide 60s linear infinite;
+
+}
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-960px, 0, 0); /* The image width */
+  }
+}
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 400%;
+}
+
+/* ABOUT US PAGE STYLE*/
+.aboutUsStyle table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+.aboutUsMenu {
+	text-align: center;
+	margin-top: 50px;
+}
+	
+.aboutUsFigure {
+	border: #000000 solid;
+	border: double;
+	padding: 20px;
+	float: right;
+}
+
+footer {
+  border-top: solid 1px black;
+  text-align:center;
+  clear: both;
+  font-size: 8px;
+
+}
+footer a:link{
+      color: #454545;
+    }
+footer a:hover {
+      color: #999999;
+    }
+footer a:visited {
+      color: #202020;
+    }
+}
+
+
+/*Payment page*/
+:root {
+  --small-mobile-font-size: 20px;
+  --large-mobile-font-size: 22px;
+  --desktop-font-size: 18px;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 500;
+  margin: 20px 10px 0 10px;
+}
+
+button {
+  background-color: black;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #eee;
+  cursor: pointer;
+  display: block;
+  font-size: 20px; /* fallback */
+  font-size: var(--large-mobile-font-size);
+  font-weight: 400;
+  margin: 3px 0 0 0;
+  padding: 14px;
+}
+
+button:disabled {
+  color: #888;
+  cursor: default;
+}
+
+button:not(:disabled):hover {
+  background-color: #333;
+  color: white;
+}
+
+div.explanation {
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+
+section#cc-exp-csc div:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+
+h1 {
+  border-bottom: 1px solid #ccc;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 0 0 30px 0;
+  padding: 0 0 10px 0;
+}
+
+input {
+  border: 1px solid #ccc;
+  font-size: 22px; /* fallback */
+  font-size: var(--large-mobile-font-size);
+  padding: 15px;
+  width: 90%; /* fallback */
+  width: calc(100% - 30px); /* full width minus padding */
+}
+
+input:not(:focus):invalid,
+input:not(:focus):invalid {
+  color: red;
+  outline-color: red;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  font-size: var(--large-mobile-font-size);
+  font-weight: 400;
+  margin: 0 0 8px 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+p {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+form section {
+  margin: 0 0 15px 0;
+  position: relative;
+}
+
+form section:last-of-type {
+    margin: 0 0 25px 0;
+}
+
+section#cc-exp-csc {
+  display: flex;
+  justify-content: space-between;
+}
+
+section#exp-csc select#cc-exp-month {
+  margin: 0 10px 0 0;
+  width: 67px;
+}
+
+section#exp-csc select#cc-exp-year {
+  width: 99px;
+}
+
+select {
+  background-color: white;
+  border: 1px solid #ccc;
+  font-size: var(--mobile-font-size);
+  padding: 15px 15px 15px 11px;
+  width: 100%; /* don't need to account for padding :/ */
+}
+
+@media (min-width: 400px) {
+  body {
+    margin: 40px 20px 0 20px;
+  }
+  button {
+    font-size: 20px; /* fallback */
+    font-size: var(--large-mobile-font-size);
+  }
+  div.explanation {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 60px 0;
+  }
+  input {
+    font-size: 22px; /* fallback */
+    font-size: var(--large-mobile-font-size);
+  }
+  label {
+    font-size: 22px; /* fallback */
+    font-size: var(--large-mobile-font-size);
+    margin: 0 0 10px 0;
+  }
+  p {
+    font-weight: 300;
+  }
+  form section {
+    margin: 0 0 40px 0;
+  }
+  form section:last-of-type {
+    margin: 0 0 60px 0;
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    margin: 70px 70px 0 70px;
+  }
+  button {
+    font-size: 18px; /* fallback */
+    font-size: var(--desktop-font-size);
+  }
+  section#cc-exp-csc div:not(:last-child) {
+    margin: 0 20px 0 0;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 100;
+  }
+  input {
+    font-size: 18px; /* fallback */
+    font-size: var(--desktop-font-size);
+  }
+  label {
+    font-size: 18px; /* fallback */
+    font-size: var(--desktop-font-size);
+    margin: 0 0 10px 0;
+  }
+  form section {
+      margin: 0 0 35px 0;   
+  }
+}
